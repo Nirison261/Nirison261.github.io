@@ -1,10 +1,38 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/index_background.jpg');
+    background-size: cover; /* Couvrir toute la page */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    background-attachment: fixed; /* Fixer l'image lors du défilement */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le header */
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 50%; /* Rendre l'image circulaire */
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    margin-right: 1em;
+}
+
+.header-text {
+    text-align: left;
 }
 
 header {
-    background: #333;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le header */
     color: #fff;
     padding: 1em 0;
     text-align: center;
